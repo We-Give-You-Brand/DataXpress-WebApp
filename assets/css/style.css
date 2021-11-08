@@ -162,6 +162,16 @@ ul {
   background-repeat: no-repeat;
 }
 
+.reasons .card {
+  -webkit-box-shadow: 0 0 5px rgba(10, 24, 66, 0.3);
+          box-shadow: 0 0 5px rgba(10, 24, 66, 0.3);
+  border-radius: 20px;
+}
+
+.card {
+  padding: 20px;
+}
+
 .header {
   position: fixed;
   top: 0;
