@@ -1,5 +1,6 @@
 * {
   user-select: none;
+  transition: all 0.3s ease-in-out;
 
   &,
   &::before,
@@ -16,6 +17,11 @@ body {
 
 ul {
   list-style: none;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 @import "./utilities/all";

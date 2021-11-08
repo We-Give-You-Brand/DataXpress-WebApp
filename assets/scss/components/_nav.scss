@@ -9,10 +9,16 @@
 
     a {
       text-decoration: none;
+      color: rgba($primary, 0.99);
+      font-weight: 700;
+
+      &:hover,
+      &.active {
+        color: $tetiary;
+      }
 
       @media (max-width: $mobile) {
         color: $white;
-        font-weight: bold;
         height: 100%;
 
         display: flex;
