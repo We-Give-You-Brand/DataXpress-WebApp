@@ -1,0 +1,23 @@
+* {
+  user-select: none;
+
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: "Segoe UI";
+}
+
+ul {
+  list-style: none;
+}
+
+@import "./utilities/all";
+@import "./components/all";
+@import "./layouts/all";

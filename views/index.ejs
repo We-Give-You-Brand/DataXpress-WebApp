@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataXpress Professionals</title>
+
+    <%- include('modules/head') %>
+  </head>
+  <body id="home">
+    <!-- HEADER -->
+    <header class="header dis-flex jus-cont-sb p-all_2">
+      <%- include('./components/Header.ejs'); %>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main" class="main">
+      <!-- Hero Section -->
+      <%- include('./components/sections/Hero.ejs'); %>
+
+      <!-- OUR PURPOSE -->
+      <%- include('./components/sections/DataAnalysts.ejs') %>
+
+      <!-- REASONS -->
+      <%- include('./components/sections/Reasons.ejs') %>
+
+      <!-- JOIN FORUM -->
+      <%- include('./components/sections/JoinForum.ejs'); %>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer"><%- include('./components/footer.ejs'); %></footer>
+
+    <!--  -->
+
+    <!-- TIDIO LIVE CHAT -->
+    <script
+      src="//code.tidio.co/yjz3pfvv29px3rciaiuxut6l10au18cw.js"
+      async=""
+    ></script>
+  </body>
+</html>
