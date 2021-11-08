@@ -196,18 +196,7 @@ ul {
 
 .reasons .card .btn {
   background-color: #f05442;
-  text-decoration: none;
   color: #fff;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .card {
@@ -222,6 +211,22 @@ ul {
   gap: 2rem;
 }
 
+.card .btn,
+.card button {
+  text-decoration: none;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
 .data-analysts .card {
   -webkit-box-shadow: 0 3px 5px rgba(10, 24, 66, 0.1);
           box-shadow: 0 3px 5px rgba(10, 24, 66, 0.1);
@@ -233,6 +238,17 @@ ul {
 .data-analysts .card .svgContainer {
   height: 3rem;
   width: 3rem;
+}
+
+.services .card {
+  background-color: white;
+  -webkit-box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+          box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+  padding-bottom: 2rem;
+}
+
+.services .card button {
+  background-color: rgba(240, 84, 66, 0.337);
 }
 
 .header {
@@ -259,7 +275,13 @@ ul {
 .JoinForum {
   height: calc(100vh - 70px);
   width: 100%;
-  background-color: #2150de;
+  background-color: rgba(10, 24, 66, 0.03);
+}
+
+.JoinForum > div:first-child h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -280,6 +302,8 @@ ul {
   background-color: #fff;
   padding: 20px;
   color: #0a1842;
+  font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .footer h2 {

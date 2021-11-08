@@ -14,12 +14,7 @@
 
     .btn {
       background-color: $tetiary;
-      text-decoration: none;
       color: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 }
@@ -29,6 +24,16 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  .btn,
+  button {
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
 }
 
 .data-analysts {
@@ -40,6 +45,18 @@
     .svgContainer {
       height: 3rem;
       width: 3rem;
+    }
+  }
+}
+
+.services {
+  .card {
+    background-color: $white;
+    box-shadow: 0 5px 15px rgba(21, 12, 60, 0.1);
+    padding-bottom: 2rem;
+
+    button {
+      background-color: rgba(240, 84, 66, 0.337);
     }
   }
 }
