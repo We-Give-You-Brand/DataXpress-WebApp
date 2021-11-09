@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 // Listen to PORT
 app.listen(PORT, () => {
@@ -15,11 +15,9 @@ app.use(express.static("assets"));
 // Templating Engine
 app.set("view engine", "ejs");
 
+// Router
+
 // Routes
 app.get("/", (req, res) => {
   res.render("index");
-});
-
-app.get("/account", (req, res) => {
-  res.render("pages/account");
 });

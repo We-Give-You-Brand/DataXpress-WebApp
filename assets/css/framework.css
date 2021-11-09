@@ -10,7 +10,9 @@
   font-family: inherit;
   user-select: none;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

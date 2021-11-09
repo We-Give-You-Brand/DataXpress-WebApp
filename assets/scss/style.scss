@@ -1,29 +1,10 @@
-* {
-  user-select: none;
-  transition: all 0.3s ease-in-out;
-
-  &,
-  &::before,
-  &::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-}
-
 body {
-  font-family: "Segoe UI";
-}
-
-ul {
-  list-style: none;
-}
-
-.section-title {
-  font-size: 2.2rem;
-  text-align: center;
+  & > * {
+    padding: 2rem;
+  }
 }
 
 @import "./utilities/all";
 @import "./components/all";
 @import "./layouts/all";
+@import "./pages/all";
