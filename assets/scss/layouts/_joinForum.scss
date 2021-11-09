@@ -1,0 +1,13 @@
+.JoinForum {
+  height: calc(100vh - 70px);
+  width: 100%;
+  background-color: $trans_blue;
+
+  > div:first-child {
+    h2 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -4,38 +4,22 @@
     <%- include('./modules/head.ejs') ; %>
   </head>
   <body>
-    <header class="header dis-flex jus-cont-sb">
-      <div class="logo">
-        <p>Gig Hire</p>
-      </div>
-      <nav class="nav">
-        <a href="">Submit</a>
-      </nav>
-    </header>
+    <header class="header"><%- include('./components/header.ejs') %></header>
     <main class="main">
-      <div class="gigs row gap-2">
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 1</div>
-        </div>
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 2</div>
-        </div>
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 3</div>
-        </div>
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 4</div>
-        </div>
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 4</div>
-        </div>
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 4</div>
-        </div>
-        <div class="col-12-xs col-6-sm col-3-md col-2-lg">
-          <div class="gig">Gig 4</div>
-        </div>
-      </div>
+      <!-- Hero Section -->
+      <%- include('./components/sections/Hero.ejs'); %>
+
+      <!-- OUR PURPOSE -->
+      <%- include('./components/sections/DataAnalysts.ejs') %>
+
+      <!-- OUR SERVICES -->
+      <%- include('./components/sections/Services.ejs') %>
+
+      <!-- REASONS -->
+      <%- include('./components/sections/Reasons.ejs') %>
+
+      <!-- JOIN FORUM -->
+      <%- include('./components/sections/JoinForum.ejs'); %>
     </main>
   </body>
 </html>

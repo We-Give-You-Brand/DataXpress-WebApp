@@ -1,0 +1,27 @@
+.slides {
+  &-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  height: 100%;
+  width: 100%;
+
+  width: 200%;
+
+  display: flex;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
