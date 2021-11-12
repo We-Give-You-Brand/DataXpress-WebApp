@@ -1,8 +1,10 @@
 const express = require("express");
-const path = require("path");
+const cors = require("cors");
 const app = express();
 
 const PORT = process.env.PORT || 4000;
+
+app.use(cors());
 
 // Listen to PORT
 app.listen(PORT, () => {
@@ -21,6 +23,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 app.get("/index", (req, res) => {
   res.render("index");
 });
