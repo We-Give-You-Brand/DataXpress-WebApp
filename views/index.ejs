@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <%- include('./modules/head.ejs') %> -->
+    <!-- Meta Description -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Analytics Script -->
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:title" content="DataXpress Professionals" />
+    <meta
+      property="og:description"
+      content="Your professional data analytics, consulting and solution delivery company with certified team of professionals in orienting data solutions."
+    />
+    <meta property="og:url" content="https://dataxpresswebapp.herokuapp.com" />
+    <meta property="og:article:section" content="Service" />
+    <meta
+      property="og:image"
+      content="https://dataxpresswebapp.herokuapp.com/images/DataXpressLogo.png"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- framework css -->
+    <link rel="stylesheet" href="/css/framework.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
     <title>DataXpress</title>
   </head>
   <body>
     <!-- header -->
     <header class="header dis-flex jus-cont-sb p-all_2">
-      <!-- <%- include('components/header.ejs') %> -->
+      <div class="company">
+        <a href="/"
+          ><div class="logo" id="companyLogo">
+            <img src="/images/DataXpressLogo.png" alt="" /></div
+        ></a>
+      </div>
+
+      <%- include('./components/topnav.ejs'); %>
     </header>
 
     <main class="main">
